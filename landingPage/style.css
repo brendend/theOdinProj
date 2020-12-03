@@ -1,0 +1,68 @@
+body {
+    background-color: rgb(206, 204, 204);
+}
+
+#page-wrapper {
+    position: relative;
+}
+
+#nav-bar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#wrapper {
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(206, 204, 204);
+}
+
+li {
+    font-size: 25px;
+    float: right;
+    padding-left: 50px;
+}
+  
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: rgb(206, 204, 204);
+}
+
+
+#img-caption{
+    float: left;
+}
+
+.logo {
+    float: left;
+    width:75px;
+    height:75px;
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+}
+
+.registration {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}

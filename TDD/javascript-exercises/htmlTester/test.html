@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    <script>
+        const repeatString = function(string, times) {
+     
+            let repeatedString = "";
+            const error = "ERROR";
+        
+            // Step 2. Set the While loop with (times > 0) as the condition to check
+            if (times < 0) {
+                return error;
+            }
+            while (times > 0) { // As long as times is greater than 0, the statement is executed
+                
+                    repeatedString += string; // repeatedString = repeatedString + string;
+                    times--;
+            }
+            return repeatedString;
+        }
+
+        function rand() {
+            let number;
+            number = Math.floor(Math.random() * 1000)
+            return number;
+        }
+        
+
+        console.log(repeatString('hey', 3));
+        console.log(repeatString('hey', 10));
+        console.log(repeatString('hey', 1));
+        console.log(repeatString('hey', 0));
+        console.log(repeatString('hey', -1));
+        console.log(repeatString('', 10));
+        console.log(repeatString('hey', rand()));
+    </script>
+    
+</body>
+</html>

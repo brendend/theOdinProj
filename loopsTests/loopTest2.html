@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    <div class="admitted">
+
+    </div>
+    <div class="refused">
+
+    </div>
+    <script>
+    
+    const people = ['Chris', 'Anne', 'Colin', 'Terri', 'Phil', 'Lola', 'Sam', 'Kay', 'Bruce'];
+    
+    const admitted = document.querySelector('.admitted');
+    const refused = document.querySelector('.refused');
+    admitted.textContent = 'Admit: ';
+    refused.textContent = 'Refuse: ';
+    // checks to see if array element contains lola or phil to place them on the refused list, rest of array on admitted list.
+    for (let i = 0; i < people.length; i++) {
+            if (people[i] === "Phil" || people[i] === "Lola") {
+                refused.textContent += people[i] + ', ';
+            } else {
+                admitted.textContent += people[i] + ", ";
+            }
+        }
+    // removes the 2nd last character and replaces with a period
+    admitted.textContent = admitted.textContent.substring(0, admitted.textContent.length - 2)+ '.';
+    refused.textContent = refused.textContent.substring(0, refused.textContent.length - 2)+ '.';
+    </script>
+    
+</body>
+</html>
